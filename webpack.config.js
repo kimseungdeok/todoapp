@@ -5,7 +5,7 @@ const distPath = path.join(__dirname, 'dist');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './docs/main.js',
   devServer: {
     static: {
       directory: distPath,
@@ -21,7 +21,7 @@ module.exports = {
   plugins: [
     // npm i html-webpack-plugin -D
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './docs/index.html',
     }),
   ],
   module: {
